@@ -1,0 +1,87 @@
+.camperDetailsPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.camperInfo {
+    width: 60%;
+}
+
+.stars {
+    display: flex;
+}
+
+.filledStar {
+    color: yellow;
+    margin-right: 2px;
+}
+
+.emptyStar {
+    color: lightgray;
+    margin-right: 2px;
+}
+
+.gallery {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.gallery img {
+    height: 100px; /* Adjust height as needed */
+    width: auto;
+}
+
+.tabButtons {
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px 0;
+}
+
+.tabButton {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.active {
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+.tabContent {
+    margin-top: 20px;
+}
+
+.bookingForm {
+    width: 60%;
+    margin-top: 30px;
+}
+
+.formField {
+    margin-bottom: 15px;
+}
+
+.datePicker {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.submitButton {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
