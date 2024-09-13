@@ -13,13 +13,8 @@
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #121417;
-}
-
-.logo span {
-    color: #121417;
+    padding-top: 8.5px;
+    padding-bottom: 8.5px;
 }
 
 .nav {
@@ -48,7 +43,7 @@
 
 .nav ul li a:hover,
 .nav ul li a.active {
-    color: #E44848;
+    color: var(--dark-red);
 }
 
 .header::after {

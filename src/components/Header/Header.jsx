@@ -1,6 +1,7 @@
 // Header.jsx
 import { Link, useLocation } from 'react-router-dom';
 import styles from './Header.module.css';
+import logo from '../../assets/icons/TravelTrucks.svg';
 
 const Header = () => {
     const location = useLocation();
@@ -9,7 +10,9 @@ const Header = () => {
         <header className={styles.header}>
             <div className={styles.container}>
                 <div className={styles.logo}>
-                    <Link to="/">Travel<span>Trucks</span></Link>
+                    <Link to="/">
+                        <img src={logo} alt="TravelTrucks" />
+                    </Link>
                 </div>
                 <nav className={styles.nav}>
                     <ul>

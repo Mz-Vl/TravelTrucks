@@ -1,0 +1,15 @@
+.button {
+    cursor: pointer;
+    text-decoration: none;
+    background-color: var(--red);
+    color: var(--white);
+    padding: 16px 56.5px;
+    border-radius: 200px;
+    transition: all 0.3s ease;
+    min-width: fit-content;
+    max-width: fit-content;
+}
+
+.button:hover {
+    background-color: var(--dark-red);
+}

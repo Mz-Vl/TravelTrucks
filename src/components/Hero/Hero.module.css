@@ -1,0 +1,31 @@
+.hero {
+    background-image: url('../../assets/images/HeroImg.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 72px);
+    display: flex; 
+    align-items: center;
+    color: var(--white);
+}
+
+.container {
+    position: relative;
+    display: flex;
+    padding-left: 64px;
+    padding-right: 64px;
+    max-width: 100%;
+}
+
+.heroContent {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mainHeader {
+    font-size: 48px;
+}
+
+.headerText {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
