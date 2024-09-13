@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchCampers, applyFilters } from '../../redux/campersSlice';
 import CamperCard from '../../components/CamperCard/CamperCard';
 import Filters from '../../components/Filters/Filters';
+import Button from '../../components/Button/Button';
 import styles from './CatalogPage.module.css';
 
 const CatalogPage = () => {
@@ -19,7 +20,7 @@ const CatalogPage = () => {
 
     const handleFilterChange = (newFilters) => {
         dispatch(applyFilters(newFilters));
-        setVisibleCampers(4);  // Reset visible campers when applying new filters
+        setVisibleCampers(4);
     };
 
     const loadMore = () => {
@@ -38,27 +39,59 @@ const CatalogPage = () => {
         </div>;
     }
 
-    return (
-        <div className={styles.catalogPage}>
-            <h1>Our Campers</h1>
-            <Filters onFilterChange={handleFilterChange} />
-            {filteredCampers.length === 0 ? (
-                <p>No campers found. Try adjusting your filters.</p>
-            ) : (
-                <>
-                    <div className={styles.camperGrid}>
-                        {filteredCampers.slice(0, visibleCampers).map(camper => (
-                            <CamperCard key={camper.id} camper={camper} />
-                        ))}
-                    </div>
-                    {visibleCampers < filteredCampers.length && (
-                        <button onClick={loadMore} className={styles.loadMoreButton}>
-                            Load More
-                        </button>
-                    )}
-                </>
-            )}
-        </div>
+//     return (
+//         <div className={styles.catalogPage}>
+//             <h1>Our Campers</h1>
+//             <Filters onFilterChange={handleFilterChange} />
+//             {filteredCampers.length === 0 ? (
+//                 <p>No campers found. Try adjusting your filters.</p>
+//             ) : (
+//                 <>
+//                     <div className={styles.camperGrid}>
+//                         {filteredCampers.slice(0, visibleCampers).map(camper => (
+//                             <CamperCard key={camper.id} camper={camper} />
+//                         ))}
+//                     </div>
+//                     {visibleCampers < filteredCampers.length && (
+//                         <button onClick={loadMore} className={styles.loadMoreButton}>
+//                             Load More
+//                         </button>
+//                     )}
+//                 </>
+//             )}
+//         </div>
+//     );
+// };
+
+// export default CatalogPage;
+
+return (
+        <main className={`${styles.catalogPage} ${styles.container}`}>
+            <aside className={styles.filters}>
+                <Filters onFilterChange={handleFilterChange} />
+            </aside>
+            <section className={styles.catalog}>
+                {filteredCampers.length === 0 ? (
+                    <p>No campers found. Try adjusting your filters.</p>
+                ) : (
+                    <>
+                        <div className={styles.camperGrid}>
+                            {filteredCampers.slice(0, visibleCampers).map(camper => (
+                                <article key={camper.id}>
+                                    <CamperCard camper={camper} />
+                                </article>
+                            ))}
+                        </div>
+                        {visibleCampers < filteredCampers.length && (
+                            // <button onClick={loadMore} className={styles.loadMoreButton}>
+                            //     Load More
+                            // </button>
+                            <Button onClick={loadMore}>Load More</Button>
+                        )}
+                    </>
+                )}
+            </section>
+        </main>
     );
 };
 

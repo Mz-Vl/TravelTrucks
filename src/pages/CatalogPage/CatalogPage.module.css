@@ -1,0 +1,35 @@
+.container {
+    position: relative;
+    padding: 48px 64px 52px 64px;
+    max-width: 100%;
+}
+
+
+.catalogPage {
+    display: flex;
+    gap: 32px;
+}
+
+.filters {
+    flex: 0 0 250px; /* Ширина фільтра фіксована */
+}
+
+.catalog {
+    flex: 1; /* Займає залишковий простір */
+}
+
+/* .loadMoreButton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #E44848;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+} */
+
+/* .loadMoreButton:hover {
+    background-color: #d03b3b;
+} */

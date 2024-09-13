@@ -1,0 +1,122 @@
+/* Input */
+.inputLabel {
+    color: var(--gray);
+}
+
+.inputWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.inputIcon {
+    position: absolute;
+    top: 34px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    pointer-events: none; /* Іконка не блокує кліки */
+    transition: fill 0.2s ease; /* Плавна зміна кольору */
+}
+
+.inputField {
+    font-size: 16px;
+    background-color: var(--pale-white);
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 48px;
+    padding-right: 10px;
+    height: 36px;
+    width: 360px;
+    margin-top: 8px;
+    margin-bottom: 40px;
+    border: 0px;
+    border-radius: 12px;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.2s ease;
+}
+
+.inputField:focus {
+    
+}
+
+.inputField:focus + .inputIcon {
+    fill: #E44848; /* Колір іконки при фокусі */
+}
+
+/* Filers */
+
+.filtersTitle {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: var(--dark-gra);
+    margin-bottom: 32px;
+}
+
+.filtersEquipmentTitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--black);
+    margin-bottom: 48px;
+}
+
+
+
+.filterSection {
+    padding: 20px;
+}
+
+.filtersTitle, .filtersEquipmentTitle {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.equipmentGrid, .vehicleTypeGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.equipmentItem, .vehicleTypeItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+}
+
+.equipmentItem.active, .vehicleTypeItem.active {
+  border-color: #e44848; /* Колір рамки при активному виборі */
+}
+
+.equipmentItem input, .vehicleTypeItem input {
+  display: none;
+}
+
+.equipmentItem svg, .vehicleTypeItem svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+}
+
+.equipmentItem span, .vehicleTypeItem span {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #101828;
+}
+
+.equipmentItem:hover, .vehicleTypeItem:hover {
+    border-color: #999;
+}
+
+.checkboxInput, .radioInput {
+    display: none;
+}
