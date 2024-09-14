@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import Button from '../Button/Button';
 import styles from './Filters.module.css';
-import mapIcon from '../../assets/icons/map.svg';
+import mapIcon from '../../assets/icons/Map.svg';
 import acIcon from '../../assets/icons/ac.svg';
 import automaticIcon from '../../assets/icons/gearBox.svg';
 import kitchenIcon from '../../assets/icons/kitchen.svg';

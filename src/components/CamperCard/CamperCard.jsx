@@ -8,7 +8,7 @@ import starIcon from '../../assets/icons/star.svg';
 import automaticIcon from '../../assets/icons/gearBox.svg';
 import kitchenIcon from '../../assets/icons/kitchen.svg';
 import acIcon from '../../assets/icons/ac.svg';
-import mapIcon from '../../assets/icons/map.svg';
+import mapIcon from '../../assets/icons/Map.svg';
 import tvIcon from '../../assets/icons/tv.svg';
 import bathroomIcon from '../../assets/icons/droplet.svg';
 import radio from '../../assets/icons/ui-radios.svg';
