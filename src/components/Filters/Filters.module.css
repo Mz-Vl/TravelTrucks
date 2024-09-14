@@ -1,6 +1,12 @@
-/* Input */
+/* Filters.module.css */
+.filters {
+    width: 360px;
+}
+
 .inputLabel {
     color: var(--gray);
+    display: block;
+    margin-bottom: 20px;
 }
 
 .inputWrapper {
@@ -11,112 +17,91 @@
 
 .inputIcon {
     position: absolute;
-    top: 34px;
-    left: 20px;
+    left: 15px;
+    top: 33%;
+    transform: translateY(-50%);
     width: 20px;
     height: 20px;
-    pointer-events: none; /* Іконка не блокує кліки */
-    transition: fill 0.2s ease; /* Плавна зміна кольору */
 }
 
 .inputField {
-    font-size: 16px;
-    background-color: var(--pale-white);
-    padding-top: 18px;
-    padding-bottom: 18px;
-    padding-left: 48px;
-    padding-right: 10px;
-    height: 36px;
-    width: 360px;
+    width: 100%;
+    padding: 12px 12px 12px 45px;
     margin-top: 8px;
     margin-bottom: 40px;
-    border: 0px;
-    border-radius: 12px;
-    outline: none;
+    border: none;
+    border-radius: 10px;
     font-size: 16px;
-    transition: border-color 0.2s ease;
+    background-color: var(--pale-white);
 }
-
-.inputField:focus {
-    
-}
-
-.inputField:focus + .inputIcon {
-    fill: #E44848; /* Колір іконки при фокусі */
-}
-
-/* Filers */
 
 .filtersTitle {
     font-size: 16px;
-    font-weight: 500;
-    margin-bottom: 8px;
-    color: var(--dark-gra);
-    margin-bottom: 32px;
-}
-
-.filtersEquipmentTitle {
-    font-size: 20px;
     font-weight: 600;
-    margin-bottom: 8px;
+    margin-bottom: 20px;
+    color: var(--dark-gray);
+}
+
+.filtersSubtitle {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
     color: var(--black);
-    margin-bottom: 48px;
 }
 
-
-
-.filterSection {
-    padding: 20px;
-}
-
-.filtersTitle, .filtersEquipmentTitle {
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.equipmentGrid, .vehicleTypeGrid {
+.optionsGrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 8px;
     margin-bottom: 20px;
 }
 
-.equipmentItem, .vehicleTypeItem {
+.optionItem {
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.optionItem:hover .iconWrapper {
+    background-color: #f5f5f5;
+}
+
+.iconWrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: border-color 0.2s ease;
+    width: 112px;
+    height: 96px;
+    border: 1px solid var(--light-gray);
+    border-radius: 12px;
+    transition: all 0.3s ease;
 }
 
-.equipmentItem.active, .vehicleTypeItem.active {
-  border-color: #e44848; /* Колір рамки при активному виборі */
+.optionItem.active .iconWrapper {
+    border-color: var(--red);
 }
 
-.equipmentItem input, .vehicleTypeItem input {
-  display: none;
+.iconWrapper img {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 8px;
 }
 
-.equipmentItem svg, .vehicleTypeItem svg {
-    width: 24px;
-    height: 24px;
-    fill: currentColor;
-}
-
-.equipmentItem span, .vehicleTypeItem span {
-    margin-top: 5px;
+.iconWrapper span {
     font-size: 14px;
-    color: #101828;
+    color: var(--black);
+    text-align: center;
 }
 
-.equipmentItem:hover, .vehicleTypeItem:hover {
-    border-color: #999;
+.divider {
+    border: none;
+    height: 1px;
+    background-color: var(--light-gray);
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 
-.checkboxInput, .radioInput {
-    display: none;
+.filterButton {
+    margin-bottom: 40px;
 }

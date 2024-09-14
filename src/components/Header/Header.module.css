@@ -1,6 +1,5 @@
 .header {
-    background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--pale-white);
     position: relative;
 }
 
@@ -8,8 +7,10 @@
     position: relative;
     display: flex;
     align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
     padding: 20px 64px;
-    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .logo {

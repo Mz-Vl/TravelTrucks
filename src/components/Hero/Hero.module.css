@@ -8,13 +8,16 @@
     color: var(--white);
 }
 
-.container {
+.container1 {
     position: relative;
     display: flex;
     padding-left: 64px;
     padding-right: 64px;
-    max-width: 100%;
+    max-width: 1312px;
+    margin: 0 auto;
+    width: 100%;
 }
+
 
 .heroContent {
     flex-direction: column;
