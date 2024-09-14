@@ -1,0 +1,39 @@
+/* RatingLocation.module.css */
+.ratingLocation {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 8px;
+    margin-bottom: 24px;
+    justify-content: flex-start;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.starIcon {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+}
+
+.ratingText {
+    text-decoration: underline;
+}
+
+.locationSection {
+    display: flex;
+    align-items: center;
+}
+
+.inputIcon {
+    margin-right: 4px;
+}
+
+.location {
+    font-size: 16px;
+    color: var(--black);
+    margin-left: 4px;
+}

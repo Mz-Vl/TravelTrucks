@@ -69,30 +69,3 @@ return (
 };
 
 export default CatalogPage;
-
-
-//     return (
-//         <div className={styles.catalogPage}>
-//             <h1>Our Campers</h1>
-//             <Filters onFilterChange={handleFilterChange} />
-//             {filteredCampers.length === 0 ? (
-//                 <p>No campers found. Try adjusting your filters.</p>
-//             ) : (
-//                 <>
-//                     <div className={styles.camperGrid}>
-//                         {filteredCampers.slice(0, visibleCampers).map(camper => (
-//                             <CamperCard key={camper.id} camper={camper} />
-//                         ))}
-//                     </div>
-//                     {visibleCampers < filteredCampers.length && (
-//                         <button onClick={loadMore} className={styles.loadMoreButton}>
-//                             Load More
-//                         </button>
-//                     )}
-//                 </>
-//             )}
-//         </div>
-//     );
-// };
-
-// export default CatalogPage;

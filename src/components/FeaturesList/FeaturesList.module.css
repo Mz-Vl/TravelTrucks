@@ -1,0 +1,25 @@
+/* FeaturesList.module.css */
+.features {
+    width: 384px;
+    font-size: 16px;
+    color: var(--black);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background-color: var(--dark-white);
+    padding: 12px 18px;
+    border-radius: 100px;
+    font-size: 12px;
+    color: var(--black);
+}
+
+.featureIcon {
+    width: 20px;
+}

@@ -1,0 +1,60 @@
+/* FilterSection.module.css */
+.filtersSubtitle {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+    color: var(--black);
+}
+
+.optionsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.optionItem {
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.optionItem:hover .iconWrapper {
+    background-color: #f5f5f5;
+}
+
+.iconWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 112px;
+    height: 96px;
+    border: 1px solid var(--light-gray);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.optionItem.active .iconWrapper {
+    border-color: var(--red);
+}
+
+.iconWrapper img {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 8px;
+}
+
+.iconWrapper span {
+    font-size: 14px;
+    color: var(--black);
+    text-align: center;
+}
+
+.divider {
+    border: none;
+    height: 1px;
+    background-color: var(--light-gray);
+    margin-top: 24px;
+    margin-bottom: 24px;
+}

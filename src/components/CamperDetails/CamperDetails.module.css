@@ -1,0 +1,16 @@
+/* CamperDetails.module.css */
+.details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.description {
+    font-size: 16px;
+    color: var(--dark-gray);
+    margin-bottom: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

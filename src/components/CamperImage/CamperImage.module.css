@@ -1,0 +1,14 @@
+/* CamperImage.module.css */
+.imageWrapper {
+    width: 292px;
+    height: 320px;
+    margin-right: 24px;
+    flex-shrink: 0;
+}
+
+.camperImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}

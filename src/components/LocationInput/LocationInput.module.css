@@ -1,0 +1,38 @@
+/* LocationInput.module.css */
+.inputLabel {
+    color: var(--gray);
+    display: block;
+    margin-bottom: 20px;
+}
+
+.inputWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.inputIcon {
+    position: absolute;
+    left: 15px;
+    top: 33%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+}
+
+.inputField {
+    width: 100%;
+    padding: 12px 12px 12px 45px;
+    margin-top: 8px;
+    margin-bottom: 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: var(--pale-white);
+}
+
+.inputField:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
