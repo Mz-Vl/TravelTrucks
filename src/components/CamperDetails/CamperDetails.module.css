@@ -9,8 +9,13 @@
 .description {
     font-size: 16px;
     color: var(--dark-gray);
+    margin-top: 24px;
     margin-bottom: 12px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.features {
+    width: 384px;
 }

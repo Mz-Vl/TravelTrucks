@@ -1,87 +1,107 @@
+/* CamperDetailsPage */
 .camperDetailsPage {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 20px;
 }
 
-.camperInfo {
-    width: 60%;
-}
-
-.stars {
+.contentWrapper {
     display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
 }
 
-.filledStar {
-    color: yellow;
-    margin-right: 2px;
+.leftContent {
+    width: 48%;
 }
 
-.emptyStar {
-    color: lightgray;
-    margin-right: 2px;
+.rightContent {
+    width: 48%;
 }
 
-.gallery {
+.container {
+    position: relative;
     display: flex;
-    overflow-x: auto;
-    gap: 10px;
-    margin-top: 20px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 48px 64px 52px 64px;
+    box-sizing: border-box;
 }
 
-.gallery img {
-    height: 100px; /* Adjust height as needed */
-    width: auto;
+.camperDetailsTitle {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.camperPrice {
+    margin-top: 16px;
+    margin-bottom: 28px;
+}
+
+.price {
+    font-weight: 600;
+    color: var(--black);
+    font-size: 24px;
+}
+
+.description {
+    font-size: 16px;
+    color: var(--dark-gray);
+    margin-top: 28px;
+    margin-bottom: 60px;
+    min-width: 1312px;
+}
+
+.divider {
+    border: none;
+    height: 1px;
+    background-color: var(--light-gray);
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 .tabButtons {
+    position: relative;
     display: flex;
-    justify-content: flex-start;
-    margin: 20px 0;
+    gap: 32px;
 }
 
 .tabButton {
-    background-color: transparent;
+    background: none;
     border: none;
-    font-size: 16px;
-    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--dark-gray);
     cursor: pointer;
-    transition: color 0.3s ease;
+    padding-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    transition: transform 0.3s ease;
+    position: relative;
 }
 
-.active {
-    color: red;
-    border-bottom: 2px solid red;
-}
-
-.tabContent {
-    margin-top: 20px;
-}
-
-.bookingForm {
-    width: 60%;
-    margin-top: 30px;
-}
-
-.formField {
-    margin-bottom: 15px;
-}
-
-.datePicker {
+.tabButton::after {
+    z-index: 1;
+    content: "";
+    display: block;
     width: 100%;
-    padding: 10px;
-    font-size: 14px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
+    height: 5px;
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: background-color 0.3s ease;
 }
 
-.submitButton {
-    background-color: red;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 4px;
+.tabButton.active::after {
+    background-color: var(--red);
+}
+
+.tabButtons::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--light-gray);
 }

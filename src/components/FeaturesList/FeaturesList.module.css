@@ -1,6 +1,6 @@
 /* FeaturesList.module.css */
 .features {
-    width: 384px;
+    width: 100%;
     font-size: 16px;
     color: var(--black);
     display: flex;
@@ -17,7 +17,7 @@
     padding: 12px 18px;
     border-radius: 100px;
     font-size: 12px;
-    color: var(--black);
+    color: var(--black); 
 }
 
 .featureIcon {

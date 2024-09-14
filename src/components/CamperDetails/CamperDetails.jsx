@@ -25,7 +25,8 @@ const CamperDetails = ({ camper, isFavorite, onFavoriteToggle }) => {
                 location={camper.location} 
             />
             <p className={styles.description}>{truncatedDescription}</p>
-            <FeaturesList camper={camper} />
+            <div className={styles.features}><FeaturesList camper={camper} /></div>
+            
             <Button to={`/catalog/${camper.id}`} target="_blank">
                 Show more
             </Button>
