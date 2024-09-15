@@ -1,53 +1,88 @@
 .bookingForm {
-    background-color: #f9f9f9;
-    padding: 20px;
     border-radius: 4px;
+    border: 1px solid var(--light-gray);
+    border-radius: 10px;
+    padding: 44px;
+    max-width: 615px; /* 527px + 44px * 2 */
+    box-sizing: border-box;
 }
 
 .bookingForm h2 {
-    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
 }
 
 .bookingForm p {
-    margin-bottom: 20px;
-    color: #666;
+    margin-bottom: 24px;
+    color: var(--gray);
 }
 
 .formField {
-    margin-bottom: 15px;
+    margin-bottom: 14px;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: var(--pale-white);
+    box-sizing: border-box;
+    outline: none;
 }
 
-.formField input,
-.formField textarea,
-.datePicker {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+.comment {
+    resize: none;
+    height: 118px;
+    margin-bottom: 24px;
 }
 
 .errorMessage {
-    color: red;
-    font-size: 12px;
-    margin-top: 5px;
+    color: var(--red);
+    font-size: 16px;
+    margin-bottom: 8px;
 }
 
 .submitButton {
-    width: 100%;
-    padding: 10px;
-    background-color: #e74c3c;
-    color: white;
+    margin: 0 auto;
+    display: block;
     border: none;
-    border-radius: 4px;
     cursor: pointer;
-    font-size: 16px;
+    text-decoration: none;
+    background-color: var(--red);
+    color: var(--white);
+    padding: 16px 56.5px;
+    border-radius: 200px;
+    transition: all 0.3s ease;
+    min-width: fit-content;
+    max-width: fit-content;
 }
 
 .submitButton:hover {
-    background-color: #c0392b;
+    background-color: var(--dark-red);
 }
 
 .submitButton:disabled {
-    background-color: #ccc;
+    background-color: var(--gray);
     cursor: not-allowed;
+}
+
+.datePicker {
+    width: 500px;
+}
+
+.alert {
+    position: relative;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #d6e9c6;
+    border-radius: 4px;
+    color: #3c763d;
+    background-color: #dff0d8;
+}
+
+.closeIcon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
 }

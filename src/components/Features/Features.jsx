@@ -16,7 +16,7 @@ const Features = ({ camper }) => {
                 
         
                 <div className={styles.vehicleDetails}>
-                    <FeaturesList camper={camper} />
+                    <FeaturesList camper={camper} customFeatureStyle={styles.darkBg}/>
                     <h3 >Vehicle details</h3>
                     <hr className={styles.divider}/>
                     <div className={styles.info}>

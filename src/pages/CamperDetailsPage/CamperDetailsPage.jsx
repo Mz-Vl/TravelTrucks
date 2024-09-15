@@ -49,30 +49,25 @@ const CamperDetailsPage = () => {
             </div>
             <Gallery images={currentCamper.gallery} className={styles.detailsPageGallery} />
             <p className={styles.description}>{currentCamper.description}</p>
-
+            <div className={styles.tabButtons}>
+                <button
+                    className={`${styles.tabButton} ${activeTab === 'features' ? styles.active : ''}`}
+                    onClick={() => handleTabClick('features')}
+                >
+                    Features 
+                </button>
+                <button
+                    className={`${styles.tabButton} ${activeTab === 'reviews' ? styles.active : ''}`}
+                    onClick={() => handleTabClick('reviews')}
+                >
+                    Reviews 
+                </button>
+            </div>
             <div className={styles.contentWrapper}>
                 <div className={styles.leftContent}>
-                    <div className={styles.tabButtons}>
-                        <button
-                            className={`${styles.tabButton} ${activeTab === 'features' ? styles.active : ''}`}
-                            onClick={() => handleTabClick('features')}
-                        >
-                            Features 
-                        </button>
-                        <button
-                            className={`${styles.tabButton} ${activeTab === 'reviews' ? styles.active : ''}`}
-                            onClick={() => handleTabClick('reviews')}
-                        >
-                            Reviews 
-                        </button>
-                    </div>
-
-                    <hr className={styles.divider}/>
-
                     {activeTab === 'features' && <Features camper={currentCamper} />}
                     {activeTab === 'reviews' && <Reviews reviews={currentCamper.reviews} />}
                 </div>
-                
                 <div className={styles.rightContent}>
                     <BookingForm />
                 </div>
@@ -82,7 +77,6 @@ const CamperDetailsPage = () => {
 };
 
 export default CamperDetailsPage;
-
 
 
 

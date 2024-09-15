@@ -20,11 +20,13 @@ const featuresList = [
     { name: 'fuel', icon: fuel, label: 'Fuel', key: 'fuel' },
 ];
 
-const FeaturesList = ({ camper }) => (
+const FeaturesList = ({ camper, customFeatureStyle }) => (
     <div className={styles.features}>
         {featuresList.map(feature => 
             (feature.key === 'transmission' ? camper[feature.key] === 'automatic' : camper[feature.key]) && (
-                <div key={feature.name} className={styles.feature}>
+                <div key={feature.name}
+                    className={`${styles.feature} ${customFeatureStyle || ''}`}
+                >
                     <img src={feature.icon} alt={feature.label} className={styles.featureIcon} />
                     <span>{feature.label}</span>
                 </div>
