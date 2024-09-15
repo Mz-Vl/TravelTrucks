@@ -1,4 +1,3 @@
-// RatingLocation.jsx
 import starIcon from '../../assets/icons/star.svg';
 import mapIcon from '../../assets/icons/Map.svg';
 import styles from './RatingLocation.module.css';

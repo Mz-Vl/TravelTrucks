@@ -1,4 +1,3 @@
-// CatalogPage.jsx
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchCampers, applyFilters } from '../../redux/campersSlice';

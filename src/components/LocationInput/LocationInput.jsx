@@ -1,4 +1,3 @@
-// LocationInput.jsx
 import mapIcon from '../../assets/icons/Map.svg';
 import styles from './LocationInput.module.css';
 

@@ -1,4 +1,3 @@
-// HomePage.jsx
 import Hero from '../../components/Hero/Hero';
 
 const HomePage = () => {

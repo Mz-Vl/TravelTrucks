@@ -1,4 +1,3 @@
-// Gallery.jsx
 import styles from './Gallery.module.css';
 
 const Gallery = ({ images }) => {

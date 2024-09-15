@@ -1,4 +1,3 @@
-// campersSlice.js
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
@@ -10,20 +9,6 @@ const initialState = {
     error: null,
     favorites: [],
 };
-
-// const initialState = {
-//     allCampers: [],
-//     filteredCampers: [],
-//     currentCamper: {
-//         name: '',
-//         gallery: [],
-//         reviews: [],
-        
-//     },
-//     status: 'idle',
-//     error: null,
-//     favorites: [],
-// };
 
 export const fetchCampers = createAsyncThunk(
     'campers/fetchCampers',
@@ -40,21 +25,6 @@ export const fetchCamperDetails = createAsyncThunk(
         return response.data;
     }
 );
-
-// export const fetchCamperDetails = createAsyncThunk(
-//     'campers/fetchCamperDetails',
-//     async (camperId, { rejectWithValue }) => {
-//         try {
-//             const response = await axios.get(`https://66b1f8e71ca8ad33d4f5f63e.mockapi.io/campers/${camperId}`);
-//             console.log('API response:', response.data);
-//             return response.data;
-//         } catch (error) {
-//             console.error('Error fetching camper details:', error);
-//             return rejectWithValue(error.message);
-//         }
-//     }
-// );
-
 
 const campersSlice = createSlice({
     name: 'campers',

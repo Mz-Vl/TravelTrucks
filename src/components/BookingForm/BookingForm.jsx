@@ -1,4 +1,3 @@
-// BookingForm.jsx
 import { useState } from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
@@ -65,6 +64,7 @@ const BookingForm = () => {
                             }}
                             dateFormat="d MMMM, yyyy"
                             className={`${styles.datePicker} ${styles.formField}`}
+                            calendarClassName={styles.customCalendar}
                             placeholderText="Booking date*"
                             minDate={new Date()}
                         />

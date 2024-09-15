@@ -1,4 +1,3 @@
-// FilterSection.jsx
 import styles from './FilterSection.module.css';
 
 const FilterSection = ({ title, options, selectedOptions, onOptionChange }) => (

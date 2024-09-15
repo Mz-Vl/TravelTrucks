@@ -1,4 +1,3 @@
-// EquipmentFilter.jsx
 import FilterSection from '../FilterSection/FilterSection';
 import acIcon from '../../assets/icons/ac.svg';
 import automaticIcon from '../../assets/icons/gearBox.svg';

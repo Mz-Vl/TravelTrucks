@@ -1,4 +1,3 @@
-// Header.jsx
 import { Link, useLocation } from 'react-router-dom';
 import styles from './Header.module.css';
 import logo from '../../assets/icons/TravelTrucks.svg';

@@ -1,4 +1,3 @@
-// FeaturesList.jsx
 import automaticIcon from '../../assets/icons/gearBox.svg';
 import kitchenIcon from '../../assets/icons/kitchen.svg';
 import acIcon from '../../assets/icons/ac.svg';

@@ -1,4 +1,3 @@
-// Hero.jsx
 import Button from '../Button/Button';
 import styles from './Hero.module.css';
 

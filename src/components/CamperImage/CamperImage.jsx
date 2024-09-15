@@ -1,4 +1,3 @@
-// CamperImage.jsx
 import styles from './CamperImage.module.css';
 
 const CamperImage = ({ imageUrl, name }) => (

@@ -1,4 +1,3 @@
-// VehicleTypeFilter.jsx
 import FilterSection from '../FilterSection/FilterSection';
 import vanIcon from '../../assets/icons/bi_grid-1x2.svg';
 import fullyIntegratedIcon from '../../assets/icons/bi_grid.svg';

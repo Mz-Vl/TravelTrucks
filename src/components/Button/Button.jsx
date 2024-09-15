@@ -1,4 +1,3 @@
-// src/components/Button/Button.jsx
 import { Link } from 'react-router-dom';
 import styles from './Button.module.css';
 

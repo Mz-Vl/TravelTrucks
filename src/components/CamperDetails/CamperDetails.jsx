@@ -1,4 +1,3 @@
-// CamperDetails.jsx
 import TitleSection from '../TitleSection/TitleSection';
 import RatingLocation from '../RatingLocation/RatingLocation';
 import FeaturesList from '../FeaturesList/FeaturesList';

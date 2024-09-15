@@ -1,4 +1,3 @@
-// Filters.jsx
 import { useState } from 'react';
 import Button from '../Button/Button';
 import LocationInput from '../LocationInput/LocationInput';

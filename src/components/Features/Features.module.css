@@ -1,9 +1,8 @@
-/* Features.module.css */
 .featuresContainer {
     margin-top: 20px;
     background-color: var(--pale-white);
     border-radius: 10px;
-    padding: 80px 44px ;
+    padding: 44px 52px ;
 }
 
 .vehicleDetails h3 {
